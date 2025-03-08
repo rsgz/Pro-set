@@ -1,0 +1,23 @@
+==============vite 创建流程==============
+npm init vite
+Project name: » pro_v1
+Package name: » pro_v1
+选择框架 vue
+选择语法 js
+
+
+npm运行项目
+cd pro_v1
+npm install
+npm run dev    或者 
+
+yarn运行项目
+npm install -g yarn
+yarn --version
+yarn dev  运行项目
+
+访问项目
+http://localhost:5173/
+
+大小 35.5MB
+==============部署流程==============

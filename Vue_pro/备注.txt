@@ -1,2 +1,9 @@
 这个文件夹 放置很多vue简单项目文件
+分为三种类型：
+1-vue+组合式api(函数式)+setup语法糖+js
+2-vue+组合式api(函数式)+setup语法糖+ts
+3-vue+选项式api(面相对象)+js
+4-vue+选项式api(面相对象)+ts
+5-vue+HTML 文件+js
+
 database-manager  展示了一个 服务器列表

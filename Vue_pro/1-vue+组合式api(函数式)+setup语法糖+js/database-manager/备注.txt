@@ -21,7 +21,8 @@ npm uninstall axios
 
 ===============查看结果===============
 执行代码 看结果
-npm run serve
+npm run serve 运行看效果
+npm run build  构建
 http://192.168.120.91:8080/
 
 ===============需求分析===============
