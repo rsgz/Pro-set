@@ -1,0 +1,83 @@
+部署本地浏览器步骤：
+参考文档：http://www.360doc.com/showweb/0/0/1148192832.aspx
+===============前提条件===============
+1 你安装了vscode
+2 package.json同级目录 执行下面的代码
+
+===============安装流程===============
+1.1 安装vue cli
+npm install -g @vue/cli
+
+1.2 创建项目
+D: && cd D:\0-code\vue_pro
+vue create database-manager
+
+1.3 安装 axios
+cd database-manager
+npm install axios
+
+1.4 安装错了 可以直接卸载
+npm uninstall axios
+
+===============查看结果===============
+执行代码 看结果
+npm run serve 运行看效果
+npm run build  构建
+http://192.168.120.91:8080/
+
+===============需求分析===============
+服务器列表管理：
+允许用户添加、编辑和删除服务器信息（服务器地址、端口、数据库类型等）。
+将服务器列表存储在本地，以便下次打开应用时恢复。
+
+数据库访问：
+用户可以选择一个服务器，并输入 SQL 查询语句。
+将查询语句发送到服务器，并显示查询结果。
+
+前端界面：
+使用 Vue 组件构建用户界面。
+
+技术栈：
+Vue 3
+Axios（用于发送 HTTP 请求）
+LocalStorage（用于本地存储服务器列表）
+
+需要一个后端API来处理数据库的请求，这里不提供后端代码，只提供前端如何调用
+改良建议：
+1 添加防重复提交机制
+2 实现服务器连接测试功能
+3 增加分页/搜索功能
+4 界面太丑了
+
+===============语法解析===============
+区分：
+组合式api-->类似于 函数式编程 把相关的放一起
+选项式api-->面向对象
+
+语法
+1 这里面的写法是script setup语法糖的写法 组合式api
+2 JSON.parse(localStorage.getItem("servers") 本地获取json数据
+3 localStorage.setItem("servers", JSON.stringify(servers.value)); 存储json数据到本地
+4 servers.value[index] 这个获取服务器 元素
+5 Object.assign(currentServer, servers.value[index]);  用服务器数据 替换临时服务器变量
+6 servers.value.splice(index, 1);  删除服务器  index就是数组其中的索引值
+7 currentIndex === -1 表示未选中服务器  没选中服务器 触发弹框就是 添加服务器的逻辑  添加用 push语法 servers.value.push({ ...currentServer });
+8 index非-1 就是 选中服务器 弹框 那就是 编辑服务器的逻辑  编辑完的数据替换 逻辑 用splice语法  servers.value.splice(currentIndex, 1, { ...currentServer });
+9 serverDialog.value.showModal();  这两个分别表示 打开和关闭 对话框  在视图中 用这个 <dialog ref="serverDialog">
+   serverDialog.value.close();
+10 <form @submit.prevent="saveServer">  就是阻止 @submit.prevent的默认事件<button type="submit">保存</button> 然后执行saveServer 函数
+11 @click="closeDialog"语法 就是点击 会触发closeDialog 函数  通常在button里面 <button type="button" @click="closeDialog">取消</button>
+12 <p>{{ server.name }}</p>  这种数据绑定 是单向的  变量决定 视图
+13 v-model="currentServer.name"  这种数据绑定是双向的  变量决定 视图   视图决定变量  
+   通常出现在 input textarea select里面
+14 Object.assign 用于变量值替换  这是替换方向 左<--右  Object.assign(currentServer, { name: "", address: "", port: "" });
+15 生命周期 事件钩子 比如说 对话框进行监听 关闭的时候 变量就恢复初始值 这样 就是状态和变量值 一一对应
+onMounted(() => {
+  serverDialog.value.addEventListener('close', () => {
+    currentIndex = -1;
+    Object.assign(currentServer, { name: "", address: "", port: "" });
+  });
+});
+16 reactive就做用于{}几种数据类型  ref作用范围更广 几乎是所有的
+17 script里面ref变量值 需要加上value获取  但是模板视图里面就不用value 会自动解包
+18 

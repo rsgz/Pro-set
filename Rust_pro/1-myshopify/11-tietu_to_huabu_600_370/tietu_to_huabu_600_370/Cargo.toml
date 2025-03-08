@@ -1,0 +1,10 @@
+[package]
+name = "tietu_to_huabu_600_370"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+image = "0.24"
+imageproc = "0.23"
+rayon = "1.8"
+rusttype = "0.9"

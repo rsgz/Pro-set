@@ -8,3 +8,8 @@ http://127.0.0.1:8888
 1 需要在一个 HTML 文件中直接运行这个例子 而  不使用构建工具，那么你需要回到 Vue 3 的完整引入方式
 2 需要在http协议()下面访问  不能通过file协议(直接访问是file协议)
 3 http.server就是一个http服务器
+
+这种写法 好像也可以
+    <button @click="increment" :disabled="count <= 0">
+      Count is: {{ count }}
+    </button>

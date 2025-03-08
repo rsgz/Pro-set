@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    color: #958add;
+}
+
+li:focus {
+    color: green;
+    background-color: #bfec84;
+}
+
+div {
+    background-color: #958add;
+    border: 1px solid #ddd;
+    padding: 10px 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 6px;
+}

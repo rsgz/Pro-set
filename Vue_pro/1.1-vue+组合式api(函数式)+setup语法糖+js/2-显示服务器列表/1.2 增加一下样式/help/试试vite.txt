@@ -1,0 +1,17 @@
+===============安装流程===============
+npm init vite
+
+cd database_manager_v2
+cnpm install axios
+cnpm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+运行到这里 也是会 出现问题
+PS D:\0-code\vue_pro\database_manager_v2> npx tailwindcss init
+(node:22284) ExperimentalWarning: CommonJS module D:\x89-Node.js\node-v23.1.0-win-x64\node_modules\npm\node_modules\debug\src\node.js is loading ES Module D:\x89-Node.js\node-v23.1.0-win-x64\node_modules\npm\node_modules\supports-color\index.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+npm error could not determine executable to run
+npm error A complete log of this run can be found in: C:\Users\Administrator\AppData\Local\npm-cache\_logs\2025-03-08T09_23_33_393Z-debug-0.log
+
+
+===============查看结果===============

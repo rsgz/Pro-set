@@ -6,4 +6,10 @@
 4-vue+选项式api(面相对象)+ts
 5-vue+HTML 文件+js
 
+前提
+这个三个一定要先安装好
+1 node
+2 vscode
+3 Vue.volar 插件   
+
 database-manager  展示了一个 服务器列表

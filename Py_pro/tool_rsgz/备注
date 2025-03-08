@@ -1,0 +1,42 @@
+
+
+
+分析模块和类     分析里面有哪些函数方法
+from tool_rsgz.mokuai.mokuai import Mokuai_Fenxi
+Mokuai_Fenxi().print_fangfa_hanshu(Mokuai_Fenxi)
+方法和函数：
+  - 函数: __init__  无注释
+  - 函数: print_all  打印 类里面所有的 属性 函数 方法
+  - 函数: print_fangfa_hanshu  获取 所有类里面的方法和函数 并且有 文字注释
+  - 函数: print_shuxing  获取 所有类里面的属性
+  - 函数: print_suoyou_chengyuan  打印所有成员 包含 属性 方法 函数   cls 参数 传一个类进去
+
+
+处理时间数据
+from tool_rsgz.time.time import Time
+from mokuai.mokuai import Mokuai_Fenxi
+Mokuai_Fenxi().print_fangfa_hanshu(Time)
+方法和函数：
+  - 函数: __init__  无注释
+  - 函数: add_days  返回n天后的时间
+  - 函数: get_current_date  返回当前日期
+  - 函数: get_current_date_time  返回当前日期时间
+  - 函数: get_current_date_xingqi  返回当前 日期 星期几
+  - 函数: get_current_time  返回当前时间
+  - 函数: get_random_date  返回随机 日期
+  - 函数: get_random_date_time  返回随机 日期 时间
+  - 函数: get_random_time  返回随机 时间
+
+python 和 pip 相关
+from tool_rsgz.python.python_info import Python_Info
+方法和函数：
+  - 函数: __init__  无注释
+  - 函数: get_pip_mokuai_path  获取pip模块路径
+  - 函数: get_pip_version  获取pip版本
+  - 函数: get_python_install_path  获取python安装路径
+  - 函数: get_python_version  获取python版本
+  - 函数: get_python_where  获取 你现在运行的python解释器 位置在哪里
+  - 函数: get_suoyou_pip  获取系统所有pip位置
+  - 函数: get_suoyou_python  获取本地所有python
+  - 函数: is_xuni_huanjing_zhong  判断是不是在虚拟环境中
+

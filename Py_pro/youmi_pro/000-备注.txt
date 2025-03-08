@@ -1,0 +1,35 @@
+这个项目是优米科技工作的时候 创建的 方便工作
+2025-03-04 248-258  248,249,255,256,257,258
+
+
+
+006-获取商品图 存储在这里 E:\pic\shangpin
+通常 上传数据 都是用的这个尺寸  E:\pic\shangpin\800x800
+图片数据 保存在  pic_json.json
+006 代码也会调用 008 009
+008-图片尺寸分类.py
+009-打印子目录图片数量.py
+
+
+010-下载几个类目产品 比较相同尺寸.py
+有时候类目图片不够了 就去执行
+一般放在这里
+r"E:\pic\leimu\Hoodies",
+r"E:\pic\leimu\Jackets",
+r"E:\pic\leimu\Sweater",
+r"E:\pic\leimu\T-Shirts",
+r"E:\pic\leimu\Tank Tops",
+r"E:\pic\leimu\Bodysuits",
+r"E:\pic\leimu\Jersey",
+r"E:\pic\leimu\Dress",
+r"E:\pic\leimu\Skirt",
+
+
+014-分类.py 这个文件 依赖这两个数据
+D:\0-code\youmi_pro\suoyouleimu.json
+D:\0-code\youmi_pro\fenlei_id.json
+需要 tool.py
+
+
+016-set添加域名.py
+熊猫微信发域名 给我 我直接吧域名 放到这里 自动生成序号完整的信息
