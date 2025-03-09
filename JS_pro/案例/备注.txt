@@ -1,0 +1,10 @@
+运行这些案例 如果有python也可以 直接这样子
+
+=============利用python搭建http服务器访问index.html===============
+python -m http.server 8888
+
+访问 
+http://127.0.0.1:8888
+将显示 index.html
+
+=============利用node搭建http服务器访问index.html===============
