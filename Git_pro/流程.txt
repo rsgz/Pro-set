@@ -1,0 +1,7 @@
+第一次下载
+git clone https://github.com/rsgz/Pro-set.git
+
+修改内容之后 推送
+git add .
+git commit -m "xxx"
+git push origin main
