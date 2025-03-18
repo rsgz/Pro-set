@@ -18,10 +18,18 @@ def copy_directory(src, dst, exclude_dirs):
         else:
             shutil.copy2(src_path, dst_path)
 
-# 示例用法
+# 房间
 # lao = r"C:\Users\Administrator\Desktop\vue_pro"
-lao = r"C:\Users\Administrator\Desktop\rust_pro"
-xin = r"F:\0-git-pro\Pro-set\Vue_pro\1.1-vue+组合式api(函数式)+setup语法糖+js\3.8-书签库 v8 vue+rust get请求 内存数组模拟数据库 成功"
+# lao = r"C:\Users\Administrator\Desktop\rust_pro"
+
+# 公司
+# lao=r"E:\0-pro\rust_pro"
+lao=r"E:\0-pro\vue_pro"
+
+# 房间
+# xin = r"F:\0-git-pro\Pro-set\Vue_pro\1.1-vue+组合式api(函数式)+setup语法糖+js\3.10-书签库 v9 vue+rust 改动了一点"
+# 公司
+xin = r"E:\0-git-data\Pro-set\Vue_pro\1.1-vue+组合式api(函数式)+setup语法糖+js\3.10-书签库 v9 vue+rust 改动了一点"
 m=lao.split(os.sep)[-1]
 xin=os.path.join(xin,m)
 print(m)
