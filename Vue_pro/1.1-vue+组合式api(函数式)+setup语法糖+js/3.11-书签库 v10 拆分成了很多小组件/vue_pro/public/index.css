@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #848b95;
+    background-color: #303841;
+}
+
+/* ================================= ul li ================================= */
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li:hover {
+    /* background-color: #e0e0e0; */
+    color: #d19a66;
+}
+
+/* ================================= a =================================  */
+
+
+/* 定义链接的基础样式 */
+.styled-link {
+    color: #FFD700;
+    /* 使用偏黄色作为链接颜色 */
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 3s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* 添加伪元素用于创建发光效果 */
+.styled-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 215, 0, 0.5);
+    /* 半透明的黄色 */
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    z-index: -1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* 悬停时的效果 */
+.styled-link:hover::before {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+}
+
+.styled-link:hover {
+    color: #FFFF00;
+    /* 更亮的黄色 */
+}
+
+/* 已访问链接的颜色 */
+.styled-link:visited {
+    color: #FFA500;
+    /* 橙色 */
+}
+
+/* 活动链接的颜色 */
+.styled-link:active {
+    color: #FF4500;
+    /* 红橙色 */
+}
