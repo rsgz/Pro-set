@@ -263,11 +263,17 @@ leimu = [
 # {'Romper 连身裤': '2252624833282048'},
 # {'Bomber Jacket 飞行员夹克': '2252075228463104'},
 # {'Polo Shirts 马球衫': '2252487327219712'},
-  {'Sweatpants 运动裤': '2252624564846592'}
+#   {'Sweatpants 运动裤': '2252624564846592'}
+{'Coats 外套': '2252074809032704'},
+{'Cardigans 开衫': '2252349586276352'},
+{'Trousers 裤子': '2252624682287104'},
 ]
 
 leimu_l = [
-r"E:\pic\leimu\Sweatpants",
+r"E:\pic\leimu\Coats",
+r"E:\pic\leimu\Cardigans",
+r"E:\pic\leimu\Trousers",
+# r"E:\pic\leimu\Sweatpants",
 # r"E:\pic\leimu\Hoodies",
 # r"E:\pic\leimu\Jackets",
 # r"E:\pic\leimu\Pullovers",

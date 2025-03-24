@@ -17,17 +17,17 @@ def open_everything_search(query):
 if __name__ == '__main__':
     # 示例搜索路径列表
     paths_to_search = [
-        r"E:\pic\shangpin\800x800",
-r"E:\pic\leimu\Hoodies\800x800",
-r"E:\pic\leimu\T-Shirts\800x800",
-r"E:\pic\leimu\Legging\800x800",
-r"E:\pic\leimu\Pants\800x800",
-r"E:\pic\leimu\Sweatpants\800x800",
-r"E:\pic\leimu\Jeans\800x800",
-r"E:\pic\leimu\Dress\800x800",
-r"E:\pic\leimu\Party Dress\800x800",
-r"E:\pic\leimu\Mini Dresses\800x800",
-r"E:\pic\leimu\Swimsuit\800x800",
+                          r"E:\pic\shangpin\800x800",
+                          r"E:\pic\leimu\Hoodies\800x800",
+                          r"E:\pic\leimu\Jackets\800x800",
+                          r"E:\pic\leimu\Sweater\800x800",
+                          r"E:\pic\leimu\T-Shirts\800x800",
+                          r"E:\pic\leimu\Blouses\800x800",
+                      r"E:\pic\leimu\Pants\800x800",
+                      r"E:\pic\leimu\Dress\800x800",
+                      r"E:\pic\leimu\Skirt\800x800",
+                      r"E:\pic\leimu\Party Dress\800x800",
+                      r"E:\pic\leimu\Mini Dresses\800x800",
     ]
 
     for path in paths_to_search:

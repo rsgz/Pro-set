@@ -24,8 +24,3 @@ json_data = {
 
 response = requests.post('https://b03-api.shop6888.com/apis/Action', headers=headers, json=json_data)
 print(response)
-
-# Note: json_data will not be serialized by requests
-# exactly as it was in the original request.
-#data = '{"websiteId":1041}'
-#response = requests.post('https://b03-api.shop6888.com/apis/Action', headers=headers, data=data)

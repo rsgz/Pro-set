@@ -1,7 +1,7 @@
 import json,requests,os
 from settings import authorization
 # authorization 同步
-from tool_rsgz import s,info
+from tool import s,info
 
 class Fen:
     def __init__(self,keywords,paichu_str,classificationId_daiding,newValue):

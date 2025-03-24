@@ -8667,16 +8667,16 @@ r"""
 热点 高流量 
 """
 # 电商领域 女士 Romper  标题词汇 给我100组，每组4个单词左右 给我英文回复
-
+# startx,endx=998,1018
 # for websiteId in qujian:
 for websiteId in range(startx,endx+1):
-    add_houzhui(websiteId=websiteId, classificationId='2252761919913984', newValue=Party_Dress_l.rstrip())
     add_houzhui(websiteId=websiteId, classificationId='2251937252638720', newValue=Hoodie_l.rstrip())
-    add_houzhui(websiteId=websiteId, classificationId='2252624598401024', newValue=Jeans_l.rstrip())
-    add_houzhui(websiteId=websiteId, classificationId='2252899509862400', newValue=Swimsuit_l.rstrip())
     add_houzhui(websiteId=websiteId, classificationId='2252624464183296', newValue=Pants_l.rstrip())
-    add_houzhui(websiteId=websiteId, classificationId='2252761987022848', newValue=Mini_Dresses_l.rstrip())
-    add_houzhui(websiteId=websiteId, classificationId='2252624564846592', newValue=Sweatpants_l.rstrip())
-    add_houzhui(websiteId=websiteId, classificationId='2252487025229824', newValue=T_Shirts_l.rstrip())
     add_houzhui(websiteId=websiteId, classificationId='2252761936691200', newValue=Dress_l.rstrip())
-    add_houzhui(websiteId=websiteId, classificationId='2252624531304448', newValue=Legging_l.rstrip())
+    add_houzhui(websiteId=websiteId, classificationId='2252762054131712', newValue=Skirt_l.rstrip())
+    add_houzhui(websiteId=websiteId, classificationId='2252487025229824', newValue=T_Shirts_l.rstrip())
+    add_houzhui(websiteId=websiteId, classificationId='2252349770825728', newValue=Sweater_l.rstrip())
+    add_houzhui(websiteId=websiteId, classificationId='2252761919913984', newValue=Party_Dress_l.rstrip())
+    add_houzhui(websiteId=websiteId, classificationId='2252761987022848', newValue=Mini_Dresses_l.rstrip())
+    add_houzhui(websiteId=websiteId, classificationId='2252074725146624', newValue=Jackets_l.rstrip())
+    add_houzhui(websiteId=websiteId, classificationId='2252487075573760', newValue=Blouses_l.rstrip())

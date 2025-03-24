@@ -74,28 +74,24 @@ for websiteId in range(startx,endx+1):
         print(f"{name}:{response.json()}")
 
     # 这个变量没卵用
-
     # 主要是在这里 name id 填写好 然后价格区间
     shoujia(websiteId=websiteId, name="Hoodies & Sweatshirts 连帽衫和运动衫", id="2251937252638720", headers=headers,
             minUnitPrice=39, maxUnitPrice=45)
+    shoujia(websiteId=websiteId, name="Women's Jackets 夹克", id="2252074725146624", headers=headers, minUnitPrice=55,
+            maxUnitPrice=99)
+    shoujia(websiteId=websiteId, name="Sweater 毛衣", id="2252349770825728", headers=headers, minUnitPrice=38,
+            maxUnitPrice=55)
     shoujia(websiteId=websiteId, name="T-Shirts T恤衫", id="2252487025229824", headers=headers, minUnitPrice=27,
             maxUnitPrice=37)
-    shoujia(websiteId=websiteId, name="Legging 紧身裤", id="2252624531304448", headers=headers, minUnitPrice=35,
-            maxUnitPrice=48)
-    shoujia(websiteId=websiteId, name="Pants 长裤", id="2252624464183296", headers=headers, minUnitPrice=31,
-            maxUnitPrice=42)
-    shoujia(websiteId=websiteId, name="Sweatpants 运动裤", id="2252624564846592", headers=headers, minUnitPrice=33,
-            maxUnitPrice=46)
-    shoujia(websiteId=websiteId, name="Jeans 牛仔裤", id="2252624598401024", headers=headers, minUnitPrice=38,
-            maxUnitPrice=55)
-    shoujia(websiteId=websiteId, name="Dress 连衣裙", id="2252761936691200", headers=headers, minUnitPrice=55,
-            maxUnitPrice=68)
+    shoujia(websiteId=websiteId, name="Blouses 衬衫", id="2252487075573760", headers=headers, minUnitPrice=35,
+            maxUnitPrice=49)
+    shoujia(websiteId=websiteId, name="Pants 长裤", id="2252624464183296", headers=headers, minUnitPrice=31, maxUnitPrice=42)
+    shoujia(websiteId=websiteId, name="Dress 连衣裙", id="2252761936691200", headers=headers, minUnitPrice=55, maxUnitPrice=68)
+    shoujia(websiteId=websiteId, name="Skirt 裙子", id="2252762054131712", headers=headers, minUnitPrice=38, maxUnitPrice=70)
     shoujia(websiteId=websiteId, name="Party Dress 派对礼服", id="2252761919913984", headers=headers, minUnitPrice=55,
             maxUnitPrice=68)
     shoujia(websiteId=websiteId, name="Mini Dresses 迷你连衣裙", id="2252761987022848", headers=headers, minUnitPrice=38,
             maxUnitPrice=58)
-    shoujia(websiteId=websiteId, name="Swimsuit 泳装", id="2252899509862400", headers=headers, minUnitPrice=38,
-            maxUnitPrice=55)
 
     # 市场价
     json_data = {"options":{"searchHierarchyMethod":3,"websiteId":websiteId},"minUnitPriceRate":1.1,"maxUnitPriceRate":1.25}

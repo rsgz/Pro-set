@@ -1,29 +1,8 @@
 # 定义 web_data 和 func_l
-web_data =(1,{'Hoodies & Sweatshirts 连帽衫和运动衫': '2251937252638720',
-'Sweater 毛衣': '2252349754048512',
-'Mini Dresses 迷你连衣裙': '2252761987022848',
-'Midi Dresses 中长连衣裙': '2252762003800064',
-'Maxi Dresses 长连衣裙': '2252762020577280',
-'Party Dress 派对连衣裙': '2252761919913984',
-'Wedding Dress 婚礼连衣裙': '2252761953468416',
-'Floral Dress 碎花连衣裙': '2252762054131712',
-'Unclassified Dresses 未分类连衣裙': '2252761936691200',
-'Unclassified Skirt 未分类裙子': '2252761970245632',
-'Mini Skirt 迷你裙': '2252762087686144',
-'Midi Skirt 中长裙': '2252762104463360',
-'Maxi Skirt 长裙': '2252762121240576',
-'Suspender Dress 吊带连衣裙': '2252762138017792',
-'Sequin Dress 亮片连衣裙': '2252762171572224',
-'Tulle Dress 薄纱连衣裙': '2252762188349440',
-'Shirt Dress 衬衫连衣裙': '2252762205126656',
-'Denim Skirt 牛仔裙': '2252762221903872',
-'Lace Dress 蕾丝连衣裙': '2252762255458304',
-'Pencil Skirt 铅笔裙': '2252762272235520',
-'Tank Dress 背心连衣裙': '2252762154795008',
-'Sweater Dresses 毛织连衣裙': '2252762238681088',
-'Swimsuit 泳衣': '2252899509862400',})
+web_data =(1,{'Hoodies & Sweatshirts 连帽衫和运动衫': '2251937252638720', "Women's Jackets 夹克": '2252074725146624', 'Sweater 毛衣': '2252349754048512', 'Shorts 短裤': '2252624497737728', 'Mini Dresses 迷你连衣裙': '2252761987022848', 'Midi Dresses 中长连衣裙': '2252762003800064', 'Maxi Dresses 长连衣裙': '2252762020577280', 'Party Dress 派对连衣裙': '2252761919913984', 'Wedding Dress 婚礼连衣裙': '2252761953468416', 'Floral Dress 碎花连衣裙': '2252762054131712', 'Unclassified Dresses 未分类连衣裙': '2252761936691200', 'Unclassified Skirt 未分类裙子': '2252761970245632', 'Mini Skirt 迷你裙': '2252762087686144', 'Midi Skirt 中长裙': '2252762104463360', 'Maxi Skirt 长裙': '2252762121240576',})
 
 func_l = r"""
+    add_houzhui(websiteId=websiteId, classificationId='2252624497737728', newValue=Shorts_l.rstrip())
     add_houzhui(websiteId=websiteId, classificationId='2252899509862400', newValue=Swimsuit_l.rstrip())
     add_houzhui(websiteId=websiteId, classificationId='2252074725146624', newValue=Womens_Jackets_l.rstrip())
     add_houzhui(websiteId=websiteId, classificationId='2252349754048512', newValue=Sweater_l.rstrip())

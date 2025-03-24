@@ -17,11 +17,15 @@ def google_search(query, api_key, cse_id, start=1):
 
 def get_all_pages_results(query, api_key, cse_id):
     start = 1
+    xianzhi=0
     for _ in range(10):  # 获取前10页的结果
         results = google_search(f"{query} site:myshopify.com", api_key, cse_id, start)
         error_code = results.get('error', {}).get('code')
         if error_code == 429:
             print("429 接口频率限制!!!")
+            xianzhi=1
+            print("延迟1800秒")
+            time.sleep(1800)
             break
 
         if 'items' in results:
@@ -42,7 +46,10 @@ def get_all_pages_results(query, api_key, cse_id):
 
     result = '\n'.join(map(str, domains))
     print(result)
-    write_history(file_txt=r"C:\Users\Administrator\Desktop\yuming.txt", info=result)
+    if xianzhi==0:
+        print("本次爬取成功，直接写入文本记录")
+        write_history(file_txt=r"C:\Users\Administrator\Desktop\yuming.txt", info=result)
+    return xianzhi
 
 # 保存域名
 def write_history(file_txt,info):
@@ -71,9 +78,14 @@ if __name__ == '__main__':
     api_key = API_KEY
     cse_id = SEARCH_ENGINE_ID
 
-    start_hang_kw = 99
+    start_hang_kw = 124
     kw_list = read_txt_to_list(file_path=r"C:\Users\Administrator\Desktop\数据\0-关键词\关键词2 1032.txt")
-    for kw in kw_list[start_hang_kw:]:
-        print(f"开始第几行 {start_hang_kw}")
-        get_all_pages_results(query=kw, api_key=api_key, cse_id=cse_id)
-        time.sleep(200)
+    for i,kw in enumerate(kw_list[start_hang_kw:]):
+        while 1:
+            print(f"开始第几行 {start_hang_kw+i+1}")
+            xianzhi=get_all_pages_results(query=kw, api_key=api_key, cse_id=cse_id)
+            print("延迟200秒")
+            time.sleep(200)
+            if xianzhi==0:
+                print(f"接口限制：继续重复本轮{start_hang_kw+i+1}")
+                break

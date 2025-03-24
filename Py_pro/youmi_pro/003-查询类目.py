@@ -29,7 +29,7 @@ def zhuijia(txt,content):
 
 title_id_set = []  # 819
 # for websiteId in range(828,835+1):  # 设置域名范围
-# for websiteId in range(920,929+1):  # 设置域名范围
+# for websiteId in range(980,1018+1):  # 设置域名范围
 for websiteId in range(startx,endx+1):  # 设置域名范围
 # for websiteId in qujian:  # 设置域名范围
     # websiteId = 523

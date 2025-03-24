@@ -67,6 +67,18 @@ class Txt:
         except OSError as e:
             print(f"创建文件 {txt_path} 时出错: {e}")
 
+    # 追加文本到 txt 新行
+    def zhuijia_str_to_txt(self,str_content,txt_path):
+        try:
+            info=str_content
+            file_txt=txt_path
+            with open(file_txt, 'a+', encoding="utf-8") as f:
+                f.write(str(info)+ '\n')
+        except OSError as err:
+            print(file_txt, "写入信息的时候出现了问题")
+            print(err)
+        else:
+            print(file_txt, "已经写入到本地!!!")
 
 if __name__ == '__main__':
     t=Txt()

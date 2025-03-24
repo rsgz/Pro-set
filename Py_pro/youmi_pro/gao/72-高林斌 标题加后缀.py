@@ -1,9 +1,9 @@
 import requests
-# from settings import authorization
+from settings import authorization
 
 import requests
 
-authorization="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiVXNlckFjY291bnRJZCI6IjEiLCJOaWNrbmFtZSI6IueUsOS8r-WFiSIsIlJvbGUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImV4cCI6MTc0Mjk3MjE2NCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MjAwIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1MjAwIn0.t0cvirxC5J54CloQbT-Tnubbx8RhfYGW_vPdBUSoq6c"
+# authorization="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiVXNlckFjY291bnRJZCI6IjEiLCJOaWNrbmFtZSI6IueUsOS8r-WFiSIsIlJvbGUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImV4cCI6MTc0Mjk3MjE2NCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MjAwIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1MjAwIn0.t0cvirxC5J54CloQbT-Tnubbx8RhfYGW_vPdBUSoq6c"
 
 # 添加后缀  批量加100个后缀 随机和标题进行组合
 def add_houzhui(websiteId=793, classificationId='2251937252638720', newValue=''):
@@ -5840,62 +5840,23 @@ Tank_Dress_l=r"""
 
 # 1053-1112
 # 2601
-for websiteId in range(300,343+1):
+for websiteId in range(1139,1208+1):
     try:
-        add_houzhui(websiteId=websiteId, classificationId='2252762255458304', newValue=Lace_Dress_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762272235520', newValue=Pencil_Skirt_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252349754048512', newValue=Sweater_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762087686144', newValue=Mini_Skirt_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762238681088', newValue=Sweater_Dresses_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762104463360', newValue=Midi_Skirt_l.rstrip())
         add_houzhui(websiteId=websiteId, classificationId='2252761987022848', newValue=Mini_Dresses_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252761970245632', newValue=Unclassified_Skirt_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762221903872', newValue=Denim_Skirt_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252761919913984', newValue=Party_Dress_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762188349440', newValue=Tulle_Dress_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252761953468416', newValue=Wedding_Dress_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762154795008', newValue=Tank_Dress_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762054131712', newValue=Floral_Dress_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252899509862400', newValue=Swimsuit_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762138017792', newValue=Suspender_Dress_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762171572224', newValue=Sequin_Dress_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762003800064', newValue=Midi_Dresses_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762205126656', newValue=Shirt_Dress_l.rstrip())
+        add_houzhui(websiteId=websiteId, classificationId='2252624497737728', newValue=Shorts_l.rstrip())
+        add_houzhui(websiteId=websiteId, classificationId='2252074725146624', newValue=Womens_Jackets_l.rstrip())
+        add_houzhui(websiteId=websiteId, classificationId='2252349754048512', newValue=Sweater_l.rstrip())
         add_houzhui(websiteId=websiteId, classificationId='2252761936691200', newValue=Unclassified_Dresses_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762020577280', newValue=Maxi_Dresses_l.rstrip())
-        add_houzhui(websiteId=websiteId, classificationId='2252762121240576', newValue=Maxi_Skirt_l.rstrip())
         add_houzhui(websiteId=websiteId, classificationId='2251937252638720', newValue=Hoodies_Sweatshirts_l.rstrip())
-
-        # add_houzhui(websiteId=websiteId, classificationId='2252074859364352', newValue=Blazers_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762272235520', newValue=Pencil_Skirt_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762221903872', newValue=Denim_Skirt_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762087686144', newValue=Mini_Skirt_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252761987022848', newValue=Mini_Dresses_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252761970245632', newValue=Unclassified_Skirt_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252761919913984', newValue=Party_Dress_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252761953468416', newValue=Wedding_Dress_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762054131712', newValue=Floral_Dress_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762205126656', newValue=Shirt_Dress_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252074876141568', newValue=Pullovers_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762138017792', newValue=Suspender_Dress_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762121240576', newValue=Maxi_Skirt_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762104463360', newValue=Midi_Skirt_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252074725146624', newValue=Womens_Jackets_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762003800064', newValue=Midi_Dresses_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252761936691200', newValue=Unclassified_Dresses_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='3377837193035776', newValue=Robe_Gown_Sets_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762070908928', newValue=Long_Sleeved_Dress_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='3377837176258560', newValue=Pajama_Sets_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762037354496', newValue=Plus_Size_Dress_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2251937252638720', newValue=Hoodies_Sweatshirts_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252761903136768', newValue=Bodycon_Dress_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762255458304', newValue=Lace_Dress_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762238681088', newValue=Sweater_Dresses_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762171572224', newValue=Sequin_Dress_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762188349440', newValue=Tulle_Dress_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762020577280', newValue=Maxi_Dresses_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252349754048512', newValue=Sweater_l.rstrip())
-        # add_houzhui(websiteId=websiteId, classificationId='2252762154795008', newValue=Tank_Dress_l.rstrip())
+        add_houzhui(websiteId=websiteId, classificationId='2252762087686144', newValue=Mini_Skirt_l.rstrip())
+        add_houzhui(websiteId=websiteId, classificationId='2252762003800064', newValue=Midi_Dresses_l.rstrip())
+        add_houzhui(websiteId=websiteId, classificationId='2252761953468416', newValue=Wedding_Dress_l.rstrip())
+        add_houzhui(websiteId=websiteId, classificationId='2252762104463360', newValue=Midi_Skirt_l.rstrip())
+        add_houzhui(websiteId=websiteId, classificationId='2252762121240576', newValue=Maxi_Skirt_l.rstrip())
+        add_houzhui(websiteId=websiteId, classificationId='2252761919913984', newValue=Party_Dress_l.rstrip())
+        add_houzhui(websiteId=websiteId, classificationId='2252762054131712', newValue=Floral_Dress_l.rstrip())
+        add_houzhui(websiteId=websiteId, classificationId='2252762020577280', newValue=Maxi_Dresses_l.rstrip())
+        add_houzhui(websiteId=websiteId, classificationId='2252761970245632', newValue=Unclassified_Skirt_l.rstrip())
     except:
         print(websiteId,"有问题!")
 

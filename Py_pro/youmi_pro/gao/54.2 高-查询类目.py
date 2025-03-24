@@ -48,7 +48,7 @@ def zhuijia(txt,content):
         # file.write("第三行\n")
 
 title_id_set = []  # 819
-for websiteId in range(300,343+1):  # 设置域名范围
+for websiteId in range(1139,1208+1):  # 设置域名范围
     # websiteId = 523
     json_data = {
         'websiteId': websiteId,

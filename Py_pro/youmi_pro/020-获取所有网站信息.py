@@ -37,7 +37,8 @@ shopServerId_num={
 }
 
 start=216
-end=479
+end=1003
+num=0
 for web in web_list:
     id = web["id"]
     if start<=id<=end:
@@ -47,6 +48,11 @@ for web in web_list:
         shopServerId=web["shopServerId"]
         # s=f"{id} {domain} {memo} 产品数量:{goodsCount} 服务器：{shopServerId_num[shopServerId]}"
         # s=f'"{id}":"{domain}",'
-        s=f'{domain}'
+        d=domain.replace("https://", "")
+        s=f'{id}_{d}'
         print(s)
-
+        # s=f'({id},"{domain}",{goodsCount},{5000-goodsCount}),'
+        # if goodsCount<5000:
+        #     num=num+(5000-goodsCount)
+        #     print(s)
+# print(num)

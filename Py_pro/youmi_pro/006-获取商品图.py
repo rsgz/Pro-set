@@ -112,7 +112,7 @@ del_file_or_mulu(directory=r"E:\pic\shangpin")
 
 # 先去  54-查询类目里面获取所有类目 信息
 # web_id,title_id_dict =(757, {
-web_id,title_id_dict = (240, {'Hoodies & Sweatshirts 连帽衫和运动衫': '2251937252638720', 'T-Shirts T恤衫': '2252487025229824', 'Legging 紧身裤': '2252624531304448', 'Pants 长裤': '2252624464183296', 'Sweatpants 运动裤': '2252624564846592', 'Jeans 牛仔裤': '2252624598401024', 'Dress 连衣裙': '2252761936691200', 'Party Dress 派对礼服': '2252761919913984', 'Mini Dresses 迷你连衣裙': '2252761987022848', 'Swimsuit 泳装': '2252899509862400'})
+web_id,title_id_dict = (997, {'Hoodies & Sweatshirts 连帽衫和运动衫': '2251937252638720', "Women's Jackets 夹克": '2252074725146624', 'Sweater 毛衣': '2252349770825728', 'T-Shirts T恤衫': '2252487025229824', 'Blouses 衬衫': '2252487075573760', 'Pants 长裤': '2252624464183296', 'Dress 连衣裙': '2252761936691200', 'Skirt 裙子': '2252762054131712', 'Party Dress 派对礼服': '2252761919913984', 'Mini Dresses 迷你连衣裙': '2252761987022848'})
 # web_id,title_id_dict =(649, { 'Mini Dresses 迷你连衣裙': '2252761987022848',})
 
 # json_data1 = {"websiteId":web_id,"pageIndex":1,"pageSize":50,"searchHierarchyMethod":0,"classificationId":"2252349770825728"}  # 毛衣

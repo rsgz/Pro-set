@@ -1,5 +1,5 @@
 # 定义 web_data 和 func_l
-web_data = (235, {'Hoodies & Sweatshirts 连帽衫和运动衫': '2251937252638720', 'T-Shirts T恤衫': '2252487025229824', 'Legging 紧身裤': '2252624531304448', 'Pants 长裤': '2252624464183296', 'Sweatpants 运动裤': '2252624564846592', 'Jeans 牛仔裤': '2252624598401024', 'Dress 连衣裙': '2252761936691200', 'Party Dress 派对礼服': '2252761919913984', 'Mini Dresses 迷你连衣裙': '2252761987022848', 'Swimsuit 泳装': '2252899509862400'})
+web_data = (974, {'Hoodies & Sweatshirts 连帽衫和运动衫': '2251937252638720', "Women's Jackets 夹克": '2252074725146624', 'Sweater 毛衣': '2252349770825728', 'T-Shirts T恤衫': '2252487025229824', 'Blouses 衬衫': '2252487075573760', 'Pants 长裤': '2252624464183296', 'Dress 连衣裙': '2252761936691200', 'Skirt 裙子': '2252762054131712', 'Party Dress 派对礼服': '2252761919913984', 'Mini Dresses 迷你连衣裙': '2252761987022848'})
 
 func_l = r"""
     add_houzhui(websiteId=websiteId, classificationId='2252624564846592', newValue=Sweatpants_l.rstrip())

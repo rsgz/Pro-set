@@ -19,15 +19,16 @@ headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
 }
 
-classificationIds = ["2251937252638720","2252074725146624","2252349603053568","2252349770825728","2252487025229824","2252487109115904","2252624682287104","2252624464183296","2252761936691200","2252761919913984"]
+classificationIds = ["2251937252638720","2252074725146624","2252349770825728","2252487025229824","2252487075573760","2252624464183296","2252761936691200","2252762054131712","2252761919913984","2252761987022848"]
 # start=920
+startx,zuojige=1002,1
 start=startx
-for websiteId in range(start+1,start+zuojige):
+for websiteId in range(start,start+zuojige):
 # for websiteId in range(start+1,endx+1):
     json_data = {
         'websiteId': websiteId,
-        'minCount': 400,
-        'maxCount': 400,
+        'minCount': 500,
+        'maxCount': 500,
         # 'classificationIds': ["2251937252638720","2252074725146624","2252349770825728","2252487025229824","2252487042007040","2252487310442496","2252624464183296","2252761936691200","2252762054131712","2252761919913984"],
         'classificationIds': classificationIds,
         'usageTimes': 0,

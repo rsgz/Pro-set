@@ -2,9 +2,9 @@
 # url = "https://b08-admin.shop6888.com/#/goods/shopWebsiteManagement"
 # des = "市场价"
 
-key_words = "qita_rsgz_biying_sousuo_yuming_jeiguo_qingkong_result"
+key_words = "myshopify_shouyemuban_jia_biao_ti"
 url = "xxx"
-des = "必应域名抓取"
+des = "单独加标题"
 
 
 popup_html = f"""↓↓↓↓↓↓↓ popup.html ↓↓↓↓↓↓↓

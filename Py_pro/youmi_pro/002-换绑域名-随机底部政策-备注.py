@@ -47,10 +47,13 @@ for i,(k,v) in enumerate(web_dict.items()):
         # 🌸 🍁 🍄 🐥 🍓 🍅 🍑 🦞 🧊 🏺 🔥 ☀️ 🎀 🎉  🧡 💛 ❤️💙 💜 🤎 🖤 🤍 👾
         biao_qing = ['🌸', '🍁', '🍄', '🐥', '🍓', '🍅', '🍑', '🦞', '🧊', '🏺', '🔥', '☀️', '🎀', '🎉', '🧡', '💛', '❤️💙',
                  '💜', '🤎','🖤', '🤍', '👾']
-        bq=biao_qing[1]  # 0-22
+        bq=biao_qing[8]  # 0-22
         # http://www.360doc.com/showweb/0/0/1142185192.aspx
         # beizhu = f"{Time().get_current_date_xingqi()} 🧊 模板30"  #
-        beizhu = f"2025-03-13 星期四 {bq} 模板22 小李时期  二改重做"  #
+        if web_id>=998 and web_id<=endx:
+            beizhu = f"2025-03-21 星期五 {bq} 模板29 财务老域名  二改重做"  #
+        else:
+            beizhu = f"2025-03-14 星期五 {bq} 模板23 小李时期  二改重做"  #
         domain = v
         r"""
 # 1 - 美国洛杉矶 (199.33.126.154:59880)
@@ -64,9 +67,9 @@ for i,(k,v) in enumerate(web_dict.items()):
             'description':leimu,
             'language': 'en',
             'memo':beizhu,
-            'shopServerId': 4,  #
+            'shopServerId': 3,  #
             # 'creationTime': f'{Time().get_current_date_time()}',
-            'creationTime': f'2025-03-13 09:01:01',
+            'creationTime': f'2025-03-21 09:01:01',
             'goodsCount': 0,
             'jsonConfig': f'''{{"globalConfig":{{"bannels":[],"pageConfig":{{"pageTitle":"","pageDescription":"","pageKeywords":"","headerCode":"","footerCode":"","defvalCurrencyCode":"","showTranslateTool":false}},"parameters":[]}},"headerMenu":[],"footerMenu":[{{"title":"Contact Us","url":"/article/contactus{sui}.html","menuType":0}},{{"title":"Accessibility","url":"/article/accessibility{sui}.html","menuType":0}},{{"title":"Privacy","url":"/article/privacy{sui}.html","menuType":0}},{{"title":"Supply Chain Transparency","url":"/article/supply{sui}.html","menuType":0}},{{"title":"Terms of Use","url":"/article/termsofuse{sui}.html","menuType":0}},{{"title":"About us","url":"/article/aboutus{sui}.html","menuType":0}}],"navigationMenu":[]}}''',
         }
