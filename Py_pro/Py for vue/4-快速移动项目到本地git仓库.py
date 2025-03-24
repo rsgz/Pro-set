@@ -18,18 +18,23 @@ def copy_directory(src, dst, exclude_dirs):
         else:
             shutil.copy2(src_path, dst_path)
 
-# 房间
+
+
+# ============================= 公司 =============================
+# lao=r"E:\0-pro\rust_pro"
+# lao=r"E:\0-pro\vue_pro"
+lao=r"C:\Users\Administrator\Desktop\vite_pro"
+# lao = r"C:\Users\Administrator\Desktop\Py for vue"
+# xin = r"E:\0-git-data\Pro-set\Vue_pro\1.1-vue+组合式api(函数式)+setup语法糖+js\3.10-书签库 v9 vue+rust 改动了一点"
+xin = r"E:\0-git-data\Pro-set\Vue_pro\1.1-vue+组合式api(函数式)+setup语法糖+js\4.2-vite_pro 履行官网 左侧导航栏补充完整"
+
+
+# ============================= 房间 =============================
 # lao = r"C:\Users\Administrator\Desktop\vue_pro"
 # lao = r"C:\Users\Administrator\Desktop\rust_pro"
+# lao = r"C:\Users\Administrator\Desktop\Py for vue"
+# xin = r"F:\0-git-pro\Pro-set\Vue_pro\1.1-vue+组合式api(函数式)+setup语法糖+js\3.11-书签库 v10 拆分成了很多小组件"
 
-# 公司
-# lao=r"E:\0-pro\rust_pro"
-lao=r"E:\0-pro\vue_pro"
-
-# 房间
-# xin = r"F:\0-git-pro\Pro-set\Vue_pro\1.1-vue+组合式api(函数式)+setup语法糖+js\3.10-书签库 v9 vue+rust 改动了一点"
-# 公司
-xin = r"E:\0-git-data\Pro-set\Vue_pro\1.1-vue+组合式api(函数式)+setup语法糖+js\3.10-书签库 v9 vue+rust 改动了一点"
 m=lao.split(os.sep)[-1]
 xin=os.path.join(xin,m)
 print(m)

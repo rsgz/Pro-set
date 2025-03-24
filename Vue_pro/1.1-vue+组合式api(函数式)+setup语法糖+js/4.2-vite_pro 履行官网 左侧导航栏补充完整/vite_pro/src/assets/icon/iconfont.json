@@ -1,0 +1,65 @@
+{
+  "id": "4740563",
+  "name": "demo vue01",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "867060",
+      "name": "景点",
+      "font_class": "jingdian",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "8739781",
+      "name": "酒店",
+      "font_class": "jiudian",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "9834178",
+      "name": "船",
+      "font_class": "chuan",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "12902584",
+      "name": "门票",
+      "font_class": "menpiao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "17814026",
+      "name": "icon_火车票",
+      "font_class": "icon_huochepiao",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "18406564",
+      "name": "icon_激活机票专享价大",
+      "font_class": "icon_jihuojipiaozhuanxiangjiada",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "24111606",
+      "name": "旅游",
+      "font_class": "lvyou",
+      "unicode": "fafe",
+      "unicode_decimal": 64254
+    },
+    {
+      "icon_id": "40629914",
+      "name": "小汽车",
+      "font_class": "xiaoqiche",
+      "unicode": "e818",
+      "unicode_decimal": 59416
+    }
+  ]
+}
