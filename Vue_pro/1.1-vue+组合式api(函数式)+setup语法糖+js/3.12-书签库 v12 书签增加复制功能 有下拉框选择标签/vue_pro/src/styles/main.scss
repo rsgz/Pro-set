@@ -1,0 +1,3 @@
+@use "element-plus/theme-chalk/index" with ($--color-primary: #303841, // 修改主色
+    $--color-text-base: #a9a297 // 修改基础文字颜色
+);

@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "\n    INSERT INTO bookmarks (id, name, url, source, purpose, tag)\n    VALUES (?, ?, ?, ?, ?, ?)\n    ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 6
+    },
+    "nullable": []
+  },
+  "hash": "5f1bed9bbe890f1b6c9437a62079239dfd65c0e5ea7d5cd661d020289c2a6b1c"
+}
