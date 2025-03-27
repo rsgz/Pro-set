@@ -5,16 +5,16 @@ r"""
 import os
 
 chuang=0  # 创建父目录吗
-name = "ToolSets"
-zhongwen_ming = "Tools"
+name = "WangZhanGaiBan"
+zhongwen_ming = "网站改版"
 pro_path=r"C:\Users\Administrator\Desktop\vue_pro"
-file_name=f"{name}.vue"
+file_name=f"MainView.vue"
 # file_name_path = r"C:\Users\Administrator\Desktop\vue_pro\src\views\CssKu.vue"
 fu_dir = fr"{pro_path}\src\views\{name}"
 
 if chuang==1:
     os.mkdir(fu_dir)
-file_name_path = fr"{pro_path}\src\views\{name}\{name}.vue"
+file_name_path = fr"{pro_path}\src\views\{name}\MainView.vue"
 print("vue 文件名:\t\t",file_name)
 print(f"父目录：\t\t\t{fu_dir}")
 print("vue 文件放置路径:",file_name_path)
@@ -36,8 +36,9 @@ s=fr"""
 print(s)
 
 file_name_path=fr"{pro_path}\src\router\index.js"
-print(fr"↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ {file_name_path} ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓")
+print(fr"↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ \router\index.js ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓")
 s = fr"""
+# {file_name_path}
 import {{ createRouter, createWebHistory }} from 'vue-router';
 import {name} from '../views/{name}/{file_name}';
 
